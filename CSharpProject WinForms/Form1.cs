@@ -40,6 +40,21 @@ namespace CSharpProject_WinForms
                 case "Km":
                     initialValue = initialValue * 1000000;
                     break;
+                case "Mile":
+                    initialValue = initialValue * 1609000;
+                    break;
+                case "Yard":
+                    initialValue = initialValue * 914;
+                    break;
+                case "Foot":
+                    initialValue = initialValue * 305;
+                    break;
+                case "Inch":
+                    initialValue = initialValue * (decimal)25.4;
+                    break;
+                case "Nautical Miles":
+                    initialValue = initialValue * 1852000;
+                    break;
             }
 
             switch(unitSelection2.SelectedItem.ToString())
@@ -59,7 +74,27 @@ namespace CSharpProject_WinForms
                 case "Km":
                     initialValue = initialValue / 1000000;
                     break;
+                case "Mile":
+                    initialValue = initialValue / 1609000;
+                    break;
+                case "Yard":
+                    initialValue = initialValue / 914;
+                    break;
+                case "Foot":
+                    initialValue = initialValue / 305;
+                    break;
+                case "Inch":
+                    initialValue = initialValue / (decimal)25.4;
+                    break;
+                case "Nautical Miles":
+                    initialValue = initialValue / 1852000;
+                    break;
             }
+            initialValue = initialValue * 100000;
+            initialValue = Math.Round(initialValue);
+            initialValue = initialValue / 100000;
+            // Rounds decimal point to be more readable
+
 
             outputUnitBox.Text = initialValue.ToString();
         }

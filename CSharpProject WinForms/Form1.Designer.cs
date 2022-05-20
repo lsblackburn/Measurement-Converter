@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.unitSelection2 = new System.Windows.Forms.ComboBox();
             this.unitSelection1 = new System.Windows.Forms.ComboBox();
@@ -62,7 +63,12 @@
             "Mm",
             "Cm",
             "M",
-            "Km"});
+            "Km",
+            "Mile",
+            "Yard",
+            "Foot",
+            "Inch",
+            "Nautical Miles"});
             this.unitSelection2.Location = new System.Drawing.Point(155, 140);
             this.unitSelection2.Margin = new System.Windows.Forms.Padding(4);
             this.unitSelection2.Name = "unitSelection2";
@@ -78,7 +84,12 @@
             "Mm",
             "Cm",
             "M",
-            "Km"});
+            "Km",
+            "Mile",
+            "Yard",
+            "Foot",
+            "Inch",
+            "Nautical Miles"});
             this.unitSelection1.Location = new System.Drawing.Point(155, 33);
             this.unitSelection1.Margin = new System.Windows.Forms.Padding(4);
             this.unitSelection1.Name = "unitSelection1";
@@ -118,11 +129,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(343, 204);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Unit Conversion Application";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
