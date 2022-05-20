@@ -25,6 +25,9 @@ namespace CSharpProject_WinForms
 
             switch(unitSelection1.SelectedItem.ToString())
             {
+                case "Nm":
+                    initialValue = initialValue / 1000000;
+                    break;
                 case "μm":
                         initialValue = initialValue / 1000;
                     break;
@@ -41,6 +44,9 @@ namespace CSharpProject_WinForms
 
             switch(unitSelection2.SelectedItem.ToString())
             {
+                case "Nm":
+                    initialValue = initialValue * 1000000;
+                        break;
                 case "μm":
                     initialValue = initialValue * 1000;
                     break;

@@ -48,22 +48,23 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(403, 299);
+            this.groupBox1.Size = new System.Drawing.Size(321, 180);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "cm - mm Conversion";
+            this.groupBox1.Text = "Length Unit Conversion";
             // 
             // unitSelection2
             // 
             this.unitSelection2.FormattingEnabled = true;
             this.unitSelection2.Items.AddRange(new object[] {
+            "Nm",
             "μm",
             "Mm",
             "Cm",
             "M",
             "Km"});
             this.unitSelection2.Location = new System.Drawing.Point(155, 140);
-            this.unitSelection2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.unitSelection2.Margin = new System.Windows.Forms.Padding(4);
             this.unitSelection2.Name = "unitSelection2";
             this.unitSelection2.Size = new System.Drawing.Size(160, 24);
             this.unitSelection2.TabIndex = 4;
@@ -72,13 +73,14 @@
             // 
             this.unitSelection1.FormattingEnabled = true;
             this.unitSelection1.Items.AddRange(new object[] {
+            "Nm",
             "μm",
             "Mm",
             "Cm",
             "M",
             "Km"});
             this.unitSelection1.Location = new System.Drawing.Point(155, 33);
-            this.unitSelection1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.unitSelection1.Margin = new System.Windows.Forms.Padding(4);
             this.unitSelection1.Name = "unitSelection1";
             this.unitSelection1.Size = new System.Drawing.Size(160, 24);
             this.unitSelection1.TabIndex = 3;
